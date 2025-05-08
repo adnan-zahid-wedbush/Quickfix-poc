@@ -11,7 +11,7 @@ namespace FixClient
         {
             try
             {
-                var settings = new SessionSettings("C:\\Users\\ZahidA.WEDBUSH\\Documents\\GitHub\\Quickfix-poc\\Quickfix-poc\\FixClient\\client.cfg");
+                var settings = new SessionSettings("client.cfg");
                 var app = new FixClient();
                 var storeFactory = new FileStoreFactory(settings);
                 var logFactory = new FileLogFactory(settings);
